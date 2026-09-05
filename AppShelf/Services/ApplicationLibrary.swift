@@ -46,10 +46,10 @@ final class ApplicationLibrary: ObservableObject {
 
     var selectionTitle: String {
         guard case let .category(categoryID) = selection else {
-            return selection?.title ?? "全部应用"
+            return selection?.title ?? String(localized: "全部应用")
         }
 
-        return categories.first(where: { $0.id == categoryID })?.name ?? "分组"
+        return categories.first(where: { $0.id == categoryID })?.name ?? String(localized: "分组")
     }
 
     func refresh() {
@@ -213,11 +213,11 @@ enum LibrarySelection: Hashable {
     var title: String {
         switch self {
         case .all:
-            return "全部应用"
+            return String(localized: "全部应用")
         case .pinned:
-            return "已置顶"
+            return String(localized: "已置顶")
         case .category:
-            return "分组"
+            return String(localized: "分组")
         }
     }
 

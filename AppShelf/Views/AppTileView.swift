@@ -45,7 +45,9 @@ struct AppTileView: View {
         }
         .buttonStyle(.plain)
         .contextMenu {
-            Button(library.isPinned(application) ? "取消置顶" : "置顶") {
+            Button(library.isPinned(application)
+                ? String(localized: "menu.unpin", defaultValue: "取消置顶")
+                : String(localized: "menu.pin", defaultValue: "置顶")) {
                 library.togglePin(application)
             }
 

@@ -12,6 +12,7 @@ AppShelf is a native macOS application launcher focused on quick access, pinning
 - Reorders pinned applications with drag and drop
 - Creates custom groups and assigns applications from the context menu
 - Shows or hides AppShelf globally with `Option-Space`
+- Interface follows the system language (Chinese and English)
 - Reveals an application in Finder from its context menu
 
 ## Requirements
