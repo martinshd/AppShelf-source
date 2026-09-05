@@ -7,3 +7,6 @@ xcuserdata/
 # 发布产物与内部发布准备材料不进入源码仓库
 dist/
 release-prep/
+
+# 项目记忆（本地状态记录，不入库）
+.memory/
