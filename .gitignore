@@ -1,0 +1,9 @@
+.DS_Store
+DerivedData/
+build/
+*.xcuserstate
+xcuserdata/
+
+# 发布产物与内部发布准备材料不进入源码仓库
+dist/
+release-prep/
